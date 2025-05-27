@@ -11,7 +11,8 @@
         /* --color-clifford: #da373d; */
         --color-primary-bg: #efeeee ;
         --color-light-gray: #da373d;
-
+        --color-dark-gray: #132022;
+        --color-yellow: #fbcd13
       }
     </style>
   <!-- fontawesome -->
@@ -40,7 +41,23 @@
       </div>
       <div class="content h-screen">
         <iframe class="w-full h-5/6 rounded-2xl" scrolling="no" id="contentFrame" src="images/classroom.jpg"></iframe>
+        <!-- previous next button  -->
+        <div class=" flex justify-between items-center mt-5">
+          <button class="bg-white hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-6 rounded">
+            Previous
+          </button>
+          <button class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-6 rounded">
+            Next
+          </button>
+        </div>
+        <!-- add note  -->
+        <div class="">
+          <h4>Add Notes</h4>
+
+          
+        </div>
       </div>
+
     </div>
     <div class=" col-span-4">
 
@@ -56,13 +73,21 @@
           <div id="panel1" class="panel">
             <button class="sub-page" onclick="toggleSubPage('subPanel1')">Module 1</button>
             <div id="subPanel1" class="nested-items">
-              <button onclick="loadPage('nested1.html')">Item 1.1</button>
-
+              <!-- <button onclick="loadPage('nested1.html')">Item 1.1</button> -->
+              <div class="flex gap-12">
+                <i class="text-2xl fa-solid fa-video"></i>
+                <i class="text-2xl fa-solid fa-note-sticky"></i>
+                <i class="text-2xl fa-solid fa-bars"></i>
+              </div>
             </div>
             <button class="sub-page" onclick="toggleSubPage('subPanel2')">module 2</button>
             <div id="subPanel2" class="nested-items">
-              <button onclick="loadPage('nested4.html')">Item 2.1</button>
-
+              <!-- <button onclick="loadPage('nested4.html')">Item 2.1</button> -->
+              <div class="flex gap-12">
+                <i class="text-2xl fa-solid fa-video"></i>
+                <i class="text-2xl fa-solid fa-note-sticky"></i>
+                <i class="text-2xl fa-solid fa-bars"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -70,18 +95,26 @@
         <!-- Milestone 2 -->
         <div class="">
           <button class="accordion" onclick="togglePanel('panel2')">Milestone 2</button>
-        <div id="panel2" class="panel">
-          <button class="sub-page" onclick="toggleSubPage('subPanel3')">module 3</button>
-          <div id="subPanel3" class="nested-items">
-            <button onclick="loadPage('nested6.html')">Item 3.1</button>
-
+          <div id="panel2" class="panel">
+            <button class="sub-page" onclick="toggleSubPage('subPanel3')">module 3</button>
+            <div id="subPanel3" class="nested-items">
+              <!-- <button onclick="loadPage('nested6.html')">Item 3.1</button> -->
+              <div class="flex gap-12">
+                <i class="text-2xl fa-solid fa-video"></i>
+                <i class="text-2xl fa-solid fa-note-sticky"></i>
+                <i class="text-2xl fa-solid fa-bars"></i>
+              </div>
+            </div>
+            <button class="sub-page" onclick="toggleSubPage('subPanel4')">module 4</button>
+            <div id="subPanel4" class="nested-items">
+              <!-- <button onclick="loadPage('nested8.html')">Item 4.1</button> -->
+              <div class="flex gap-12">
+                <i class="text-2xl fa-solid fa-video"></i>
+                <i class="text-2xl fa-solid fa-note-sticky"></i>
+                <i class="text-2xl fa-solid fa-bars"></i>
+              </div>
+            </div>
           </div>
-          <button class="sub-page" onclick="toggleSubPage('subPanel4')">module 4</button>
-          <div id="subPanel4" class="nested-items">
-            <button onclick="loadPage('nested8.html')">Item 4.1</button>
-
-          </div>
-        </div>
         </div>
       </div>
 
