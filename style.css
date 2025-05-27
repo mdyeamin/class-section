@@ -1,0 +1,94 @@
+
+        
+        /* Left Side (Content Display) */
+        
+       
+
+        /* Right Side (Accordion) */
+        /* .accordion-container {
+            width: 30%;
+            padding: 20px;
+            background: #f4f4f4;
+            overflow: auto;
+        } */
+        .accordion {
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            outline: none;
+            width: 100%;
+            transition: 0.3s;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+        .accordion:hover {
+            /* background: #2980b9; */
+
+        }
+        .panel {
+            display: none;
+            background: white;
+            border: 1px solid #FACF16;
+            padding: 10px;
+        }
+        .panel.show {
+            display: block;
+        }
+        /* Sub Page Buttons */
+        .sub-page {
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            margin-top: 5px;
+        }
+        .sub-page:hover {
+            /* background: #1a252f; */
+        }
+        /* Nested Items */
+        .nested-items {
+            display: none;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .nested-items button {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            background: #ddd;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 2px;
+        }
+        .nested-items button:hover {
+            background: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+            .content {
+                width: 100%;
+                height: 50vh;
+            }
+            .accordion-container {
+                width: 100%;
+                height: 50vh;
+                overflow-y: auto;
+            }
+        }
+        @media (max-width: 600px) {
+            .accordion, .sub-page {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
