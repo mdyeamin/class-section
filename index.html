@@ -33,7 +33,7 @@
   </header>
   <div class="grid grid-cols-12 gap-5 ">
     <!-- class view  Left Side: Content Area -->
-    <div class="lg:col-span-8 max-md:col-span-12">
+    <div class="lg:col-span-8 max-md:col-span-12 max-md:mb-10">
       <!-- fab icon & class name -->
       <div class="flex items-center my-5">
         <i class="fa-solid fa-arrow-left mr-10"></i>
@@ -70,7 +70,7 @@
 
       <!-- fab icon & class name -->
       <div class="">
-        <div class="flex items-center lg:justify-end gap-5 my-5">
+        <div class="flex items-center lg:justify-end max-md:justify-start gap-5 my-5 max-md:mr-20">
           <i class="fa-solid fa-gift"></i>
           <i class="fa-solid fa-bookmark"></i>
         </div>
@@ -78,13 +78,21 @@
       <div class="accordion-container">
         <!-- Milestone 1 -->
         <div class="">
-          <button class="accordion" onclick="togglePanel('panel1')">Milestone 1
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-angle-down"></i></button>
+          <button class="accordion" onclick="togglePanel('panel1')">
+            <div class=" flex items-center justify-between">
+              <span>Milestone 1</span>
+
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </button>
           <div id="panel1" class="panel">
-            <button class="sub-page" onclick="toggleSubPage('subPanel1')">Module 1
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fa-solid fa-angle-down"></i></button>
+            <button class="sub-page" onclick="toggleSubPage('subPanel1')">
+              <div class="flex items-center justify-between">
+                <span>module 1</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              
+              </button>
             <div id="subPanel1" class="nested-items">
               <!-- <button onclick="loadPage('nested1.html')">Item 1.1</button> -->
               <div class="flex gap-12">
@@ -93,9 +101,14 @@
                 <i class="text-2xl fa-solid fa-bars"></i>
               </div>
             </div>
-            <button class="sub-page" onclick="toggleSubPage('subPanel2')">module 2
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fa-solid fa-angle-down"></i></button>
+            <button class="sub-page" onclick="toggleSubPage('subPanel2')">
+             <div class="flex items-center justify-between">
+              <span> module 2</span>
+              <i class="fa-solid fa-angle-down"></i>
+
+             </div>
+             
+            </button>
             <div id="subPanel2" class="nested-items">
               <!-- <button onclick="loadPage('nested4.html')">Item 2.1</button> -->
               <div class="flex gap-12">
@@ -109,13 +122,23 @@
 
         <!-- Milestone 2 -->
         <div class="">
-          <button class="accordion" onclick="togglePanel('panel2')">Milestone 2
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-angle-down"></i></button>
+          <button class="accordion" onclick="togglePanel('panel2')">
+            
+           <div class="flex items-center justify-between">
+            <span> Milestone 2</span>
+            <i class="fa-solid fa-angle-down"></i>
+           </div>
+            
+            </button>
           <div id="panel2" class="panel">
-            <button class="sub-page" onclick="toggleSubPage('subPanel3')">module 3
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fa-solid fa-angle-down"></i></button>
+            <button class="sub-page" onclick="toggleSubPage('subPanel3')">
+              <div class="flex items-center justify-between">
+                <span>module 3</span>
+
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              
+            </button>
             <div id="subPanel3" class="nested-items">
               <!-- <button onclick="loadPage('nested6.html')">Item 3.1</button> -->
               <div class="flex gap-12">
@@ -124,9 +147,14 @@
                 <i class="text-2xl fa-solid fa-bars"></i>
               </div>
             </div>
-            <button class="sub-page" onclick="toggleSubPage('subPanel4')">module 4
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fa-solid fa-angle-down"></i></button>
+            <button class="sub-page" onclick="toggleSubPage('subPanel4')">
+              <div class="flex items-center justify-between">
+                <span>module 4</span>
+
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              
+            </button>
             <div id="subPanel4" class="nested-items">
               <!-- <button onclick="loadPage('nested8.html')">Item 4.1</button> -->
               <div class="flex gap-12">
